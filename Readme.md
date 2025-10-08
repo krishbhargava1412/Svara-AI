@@ -1,9 +1,3 @@
-Here’s a clean, professional, and developer-friendly **`README.md`** for your **Email Classifier** project — ideal for GitHub or internal documentation.
-It’s written in a way that fits both AI/ML and practical integration purposes 👇
-
----
-
-```markdown
 # 📧 Email Classifier
 
 ## 🧠 Overview
@@ -31,6 +25,7 @@ It helps automate sales workflows by identifying whether a response is **positiv
 ---
 
 ## 🧩 System Architecture
+
 ```
 
 Incoming Email
@@ -50,20 +45,22 @@ Action Engine → Update CRM / Trigger Workflow
 ---
 
 ## ⚙️ Tech Stack
-| Component | Technology |
-|------------|-------------|
-| Language | Python 3.10+ |
-| NLP | Hugging Face Transformers, spaCy |
-| Model Training | PyTorch / TensorFlow |
-| Email Parsing | `email-reply-parser`, `regex`, IMAP |
-| API Layer | FastAPI / Flask |
-| Database | PostgreSQL / MongoDB |
-| Integration | CRM (HubSpot, Salesforce), Zapier / n8n |
-| Deployment | Docker + REST API |
+
+| Component      | Technology                              |
+| -------------- | --------------------------------------- |
+| Language       | Python 3.10+                            |
+| NLP            | Hugging Face Transformers, spaCy        |
+| Model Training | PyTorch / TensorFlow                    |
+| Email Parsing  | `email-reply-parser`, `regex`, IMAP     |
+| API Layer      | FastAPI / Flask                         |
+| Database       | PostgreSQL / MongoDB                    |
+| Integration    | CRM (HubSpot, Salesforce), Zapier / n8n |
+| Deployment     | Docker + REST API                       |
 
 ---
 
 ## 📁 Project Structure
+
 ```
 
 email-classifier/
@@ -86,13 +83,14 @@ email-classifier/
 ├── README.md
 └── config.yaml
 
-````
+```
 
 ---
 
 ## 🧪 Example Usage
 
 ### 1️⃣ Run Inference
+
 ```python
 from src.inference import classify_email
 
@@ -103,7 +101,7 @@ I’m interested to learn more about your pricing and product features.
 result = classify_email(email_text)
 print(result)
 # Output: {"label": "Interested", "confidence": 0.94}
-````
+```
 
 ### 2️⃣ Run via API
 
